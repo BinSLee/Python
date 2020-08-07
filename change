@@ -1,0 +1,9 @@
+price = 1260 # 음식값
+count = 0 # 거스름돈 동전 종류 개수
+
+list = [500, 100, 50, 10] # 거스름돈 동전 종류
+for coin in list:
+    count += price//coin
+    price %= coin
+
+print(count)
